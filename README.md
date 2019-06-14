@@ -35,6 +35,7 @@ git clone https://github.com/yoyotv/Image-derain-via-CGAN.git
 |10| SGD / 0.002 | Adam / 0.0002 / 0.9 | 3 | 0.015 | 15 | 20 |
 |11| SGD / 0.002 | Adam / 0.0002 / 0.9 | 1 | 0.01 | 15 | 20 |
 |12| SGD / 0.002 | Adam / 0.0002 / 0.9 | 1 | 0.01 | 15 | 5 |
+|13| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.015 | 15 | 5 |
 
 
 
