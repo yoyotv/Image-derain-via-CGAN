@@ -62,7 +62,7 @@ python gan_main_deploy.py
 
 ## Results
 
-Some "OK" results we get.
+Some "OK" results we got.
 
 | Input | Output | Ground truth |
 |:-:|:-:|:-:|
@@ -89,6 +89,14 @@ Some "OK" results we get.
 |12| SGD / 0.002 | Adam / 0.0002 / 0.5 | 1 | 0.01 | 15 | 5 |
 |13| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.012 | 15 | 5 |
 |14| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.4 | 0.015 | 15 | 5 |
+
+## Tensorboard
+
+| Model 21 |
+|---|
+|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/loss_graph.JPG" >|
+|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/Generator_loss_components.JPG" >|
+
 
 
 ## Things we have tried but did not work
