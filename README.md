@@ -93,6 +93,7 @@ Some "OK" results we got.
 ## Tensorboard
 
 Smothing : 0.98
+
 Iterations : 50k
 
 | Model 21 |
