@@ -20,7 +20,21 @@ git clone https://github.com/yoyotv/Image-derain-via-CGAN.git
 
 4. Create two empty folder named "model" and "tensorboard" in order to store the model and tensorboard files.
 
-### Pre-train model
+
+
+
+
+## Method
+
+* Basically, we are doing the re-implementation in [1]. Although completely followed the steps described in [1], we did not get the claimed performance, so refer to [2], we apply vgg19 and using the higher level features described in [2].
+
+* Using Adam optimizer will always cause the discriminator too strong, so we apply SGD in discriminator. Also, as long as the learning rate smaller than 0.002, the discriminator always overcomes the generator.
+
+* We tried different combinations between coefficients. It seems like the keypoint in this case is the relation between GAN,  ,VGG and Raw loss coefficient. e.g. Model 21 result is quite good (2019.06.15).
+
+
+
+## Cases that we tried
 | Model number | Discriminator Optimizer / Learning rate | Generator Optimizer / Learning rate / beta1 | GAN loss coefficient | VGG loss coefficient | Raw loss coefficient | label switch frequency |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |1| SGD / 0.002 | Adam / 0.002 / 0.9 | 1 | 0.01 | 1 | 10 |
@@ -37,59 +51,3 @@ git clone https://github.com/yoyotv/Image-derain-via-CGAN.git
 |12| SGD / 0.002 | Adam / 0.0002 / 0.5 | 1 | 0.01 | 15 | 5 |
 |13| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.012 | 15 | 5 |
 |14| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.4 | 0.015 | 15 | 5 |
-
-
-
-
-## Activate the system
-
-Right now we are under supermarknet folder
-
-```
-sh run.sh
-```
-1. The system will read the image in the test_image, you may change the ipout image in "run.sh" line 4.
-
-2. Darknet engine will apply YOLOv3 to predict the locationa and the class of the input image, then save the result in "current record" folder which named "predictions.txt"
-
-3. System will use "calculate.py" to read the predictions and calculate the total price of image. (You may revise the price list in "calculate.py")
-
-4. The final price will be printed on the command window and saved with the prediction in a txt file and saved under records with a format Year_Month_Date_Hour:Minute:Second.txt.
-
-5. The result shouls loo like this
-
-   <img src="https://raw.githubusercontent.com/yoyotv/YOLO-project/master/supermarket_checkout_system/demo.png" >
-
-## Training 
-
-Go to darknet folder
-
-1. Use `pycocoDemo.py` to convert original coco format label into darknet format label 
-
-    1.1. Go to https://github.com/cocodataset/cocoapi.git and install the coco api
-  
-    1.2. Put the training image under coco/images
-  
-    1.3. Put `pycocoDemo.py` under PythonAPI and run `python pycocoDemo.py`
-  
-    1.4. The darknet format label will be generated under coco/images
-
-2. Create an folder named D2S under /darknet/data/
-
-3. Copy all files (images and label.txt) to coco/images/D2S
-
-4. Copy all darknet format labels to a new folder named "tem" under coco
-
-5. Use "gen_list" to generate training list, run ``` python gen_list.py```.
-
-6. There will be a train_file_list.txt under darknet/cfg/supermarket/.
-
-7. Run
-
-```
-./darknet detector train /home/dl-linux/darknet/cfg/supermarket/obj.data /home/dl-linux/darknet/cfg/supermarket/yolov3-tiny.cfg /home/dl-linux/darknet/cfg/supermarket/yolov3-tiny.conv.15
-```
-
-8. The weights after training will place under darknet/backup.
-
-
