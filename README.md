@@ -54,7 +54,7 @@ python gan_main_deploy.py
 
 * Clip the GAN loss between 1e-10 and 1 could keep the GAN loss more stable.
 
-* Label switch do wrok in this case. Furthermore, the more label switches, the better performance we could get.
+* Label switch did wrok in this case. Furthermore, it seems like the more label switches, the better performance we could get (Performance : 5 > 10 > 20, number is the switch frequency).
 
 * Applying Label smooth did not have a significant effect.
 
@@ -88,6 +88,12 @@ Some "OK" results we get.
 |13| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.012 | 15 | 5 |
 |14| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.4 | 0.015 | 15 | 5 |
 
+
+## Things we have tried but did not work
+
+1. At first, we try to feed the discriminator only one image, so the discriminator will determine whether it is a rain image or not. The result will feed back to the generator in order to update the generator weight. But no matter how hard we tried, the generator colud not generate an "OK" de-raind image. So refer to some other CGAN papers, we decided to feed discriminator two images, which are the output of generator and its relevant ground truth.
+
+2. Pre-train the discriminator test accuracy up to 90% and 80%, Then just update the generator. The results are bad. It seems like the generator could not fight against the discriminator. We must take turns training discriminator and generator.
 
 ## References
 
