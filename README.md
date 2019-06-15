@@ -1,6 +1,10 @@
 # Image-derain-via-CGAN
 Use a CGAN to remove the rain in the image.
 
+## First thing
+
+I want to thank [gsdndeer](https://github.com/gsdndeer) who worked with me. We develop this repository together.
+
 ## Environment
 
 1. Python 2.7
@@ -111,9 +115,6 @@ Iterations : 50k
 
 * Pre-train the discriminator test accuracy up to 90% and 80%, Then just update the generator. The results are bad. It seems like the generator could not fight against the discriminator. We must take turns training discriminator and generator. 
 
-## Acknowledge
-
-I want to thank [gsdndeer](https://github.com/gsdndeer) who worked with me. We develop this repository together.
 
 ## References
 
