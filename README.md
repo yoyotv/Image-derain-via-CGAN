@@ -14,19 +14,37 @@ Use a CGAN to remove the rain in the image.
 git clone https://github.com/yoyotv/Image-derain-via-CGAN.git
 ```
 
-2. Download the training and testing data from [here](https://drive.google.com/drive/folders/1qCHxRfTEPSm4ap90NOHOqhOcJShqP8dp). Unzip them and put under Image-derain-via-CGAN-master.
+2. Download the training and testing data from [here](https://drive.google.com/drive/folders/1qCHxRfTEPSm4ap90NOHOqhOcJShqP8dp). Unzip them and put under Image-derain-via-CGAN-master/code/.
 
-3. Download the vgg19 pretrain model from [here](https://drive.google.com/drive/folders/1BpIqvXIq__0w6Y3hoOxxmpKFxPTj9htR). Then put it under Image-derain-via-CGAN-master.
+3. Download the vgg19 pretrain model from [here](https://drive.google.com/drive/folders/1BpIqvXIq__0w6Y3hoOxxmpKFxPTj9htR). Then put it under Image-derain-via-CGAN-master/code/.
 
 4. Create two empty folder named "model" and "tensorboard" in order to store the model and tensorboard files.
-
-
-
-
 
 ## Method
 
 * Basically, we are doing the re-implementation in [1]. Although completely followed the steps described in [1], we did not get the claimed performance, so refer to [2], we apply vgg19 and using the higher level features described in [2].
+
+## Train
+
+1. Assume you are now under Image-derain-via-CGAN-master/code/
+
+2. Open gan_main.py and modify the training dataset path.
+
+3. Run 
+```
+python gan_main.py
+```
+
+## Deploy
+
+1. Assume you are now under Image-derain-via-CGAN-master/code/
+
+2. Open gan_main_deploy.py and modify the deploy image path and model that youwant to load.
+
+3. Run 
+```
+python gan_main_deploy.py
+```
 
 ## What we found
 
