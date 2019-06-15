@@ -14,11 +14,11 @@ Use a CGAN to remove the rain in the image.
 git clone https://github.com/yoyotv/Image-derain-via-CGAN.git
 ```
 
-2. Replace the image.c under darknet/src, the new image.c will help us generate a txt file containing the predict result. We need this txt file when we are calculating the total price. 
+2. Download the training and testing data from [here](https://drive.google.com/drive/folders/1qCHxRfTEPSm4ap90NOHOqhOcJShqP8dp). Unzip them and put under Image-derain-via-CGAN-master.
 
-3. Put the cfg/supermarket folder files  under darknet/cfg
+3. Download the vgg19 pretrain model from [here](https://drive.google.com/drive/folders/1BpIqvXIq__0w6Y3hoOxxmpKFxPTj9htR). Then put it under Image-derain-via-CGAN-master.
 
-4. Put the [Pretrain weights](https://drive.google.com/open?id=1vOuW_z4SHUWJDOcIcXVpYHogKqh7j7ou) under darknet/backup/supermarket/
+4. Create two empty folder named "model" and "tensorboard" in order to store the model and tensorboard files.
 
 ### Pre-train model
 | Model number | Discriminator Optimizer / Learning rate | Generator Optimizer / Learning rate / beta1 | GAN loss coefficient | VGG loss coefficient | Raw loss coefficient | label switch frequency |
