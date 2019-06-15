@@ -92,6 +92,9 @@ Some "OK" results we got.
 
 ## Tensorboard
 
+Smothing : 0.98
+Iterations : 50k
+
 | Model 21 |
 |---|
 |<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/loss_graph.JPG" >|
