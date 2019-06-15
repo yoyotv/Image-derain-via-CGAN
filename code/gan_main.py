@@ -27,7 +27,7 @@ beta1 = 0.5
 
 label_switch_frequency = 5
 
-training_dataset_path = '/home/dl-linux/Desktop/CGAN_derain_dense/training/'
+training_dataset_path = '/home/dl-linux/Desktop/Image-derain-via-CGAN-master/code/training/'
 
 ################################
 

@@ -16,8 +16,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 ################################
 
 
-test_data_path = '/home/dl-linux/Desktop/CGAN_derain_dense/training/40.jpg'
-model_path = '/home/dl-linux/Desktop/CGAN_derain_dense/model/model.ckpt'
+test_data_path = '/home/dl-linux/Desktop/Image-derain-via-CGAN-master/code/training/40.jpg'
+model_path = '/home/dl-linux/Desktop/Image-derain-via-CGAN-master/code/model/model.ckpt'
 ################################
 
 
