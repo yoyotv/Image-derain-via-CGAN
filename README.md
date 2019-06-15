@@ -50,13 +50,15 @@ python gan_main_deploy.py
 
 * Using Adam optimizer will always cause the discriminator too strong, so we apply SGD in discriminator. Also, as long as the learning rate smaller than 0.002, the discriminator always overcomes the generator.
 
-* We tried different combinations between coefficients. It seems like the keypoint in this case is the relation between GAN,  ,VGG and Raw loss coefficient. e.g. Model 13 result is quite good (2019.06.15).
+* We tried different combinations between coefficients. It seems like the keypoint in this case is the relation between GAN,  ,VGG and Raw loss coefficient. e.g. Model 2, 13 result is quite good (2019.06.15).
 
 * Clip the GAN loss between 1e-10 and 1 could keep the GAN loss more stable.
 
 * Label switch did wrok in this case. Furthermore, it seems like the more label switches, the better performance we could get (Performance : 5 > 10 > 20, number is the switch frequency).
 
 * Applying Label smooth did not have a significant effect.
+
+* Maybe update generator twice then update discriminator might got a better result. We thought in this case, the discriminator is just too strong. Slow the discriminator down might lead the network to get a better performance.
 
 ## Results
 
@@ -91,9 +93,9 @@ Some "OK" results we get.
 
 ## Things we have tried but did not work
 
-1. At first, we try to feed the discriminator only one image, so the discriminator will determine whether it is a rain image or not. The result will feed back to the generator in order to update the generator weight. But no matter how hard we tried, the generator colud not generate an "OK" de-raind image. So refer to some other CGAN papers, we decided to feed discriminator two images, which are the output of generator and its relevant ground truth.
+* At first, we try to feed the discriminator only one image, so the discriminator will determine whether it is a rain image or not. The result will feed back to the generator in order to update the generator weight. But no matter how hard we tried, the generator colud not generate an "OK" de-raind image. So refer to some other CGAN papers, we decided to feed discriminator two images, which are the output of generator and its relevant ground truth.
 
-2. Pre-train the discriminator test accuracy up to 90% and 80%, Then just update the generator. The results are bad. It seems like the generator could not fight against the discriminator. We must take turns training discriminator and generator.
+* Pre-train the discriminator test accuracy up to 90% and 80%, Then just update the generator. The results are bad. It seems like the generator could not fight against the discriminator. We must take turns training discriminator and generator. 
 
 ## References
 
