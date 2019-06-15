@@ -81,7 +81,7 @@ Smothing : 0.98
 
 Iterations : 50k
 
-| Model 21 |
+| Model 13 |
 |---|
 |<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/loss_graph.JPG" >|
 |<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/Generator_loss_components.JPG" >|
