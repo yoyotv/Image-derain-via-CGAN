@@ -87,5 +87,5 @@ Some "OK" results we get.
 
 [[1]](https://arxiv.org/pdf/1701.05957v3.pdf) He Zhang, Vishwanath Sindagi, Vishal M. Patel "Image De-raining Using a Conditional Generative Adversarial Network," arXiv:1701.05957v3 
 
-[[2]](https://arxiv.org/ftp/arxiv/papers/1810/1810.09479.pdf) Bharath Raj N., Venkateswaran N, "Single Image Haze Removal using a Generative Adversarial Network," arXiv:arXiv:1810.09479
+[[2]](https://arxiv.org/ftp/arxiv/papers/1810/1810.09479.pdf) Bharath Raj N., Venkateswaran N, "Single Image Haze Removal using a Generative Adversarial Network," arXiv:1810.09479
  
