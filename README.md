@@ -14,9 +14,9 @@ Use a CGAN to remove the rain in the image.
 git clone https://github.com/yoyotv/Image-derain-via-CGAN.git
 ```
 
-2. Download the training and testing data from [here](https://drive.google.com/drive/folders/1qCHxRfTEPSm4ap90NOHOqhOcJShqP8dp). Unzip them and put under Image-derain-via-CGAN-master/code/.
+2. Download the training and testing data from [here](https://drive.google.com/drive/folders/1qCHxRfTEPSm4ap90NOHOqhOcJShqP8dp). Unzip them and put under Image-derain-via-CGAN-master/code/. The dataset is provided by [1].
 
-3. Download the vgg19 pretrain model from [here](https://drive.google.com/drive/folders/1BpIqvXIq__0w6Y3hoOxxmpKFxPTj9htR). Then put it under Image-derain-via-CGAN-master/code/.
+3. Download the vgg19 pretrain model from [here](https://drive.google.com/drive/folders/1BpIqvXIq__0w6Y3hoOxxmpKFxPTj9htR). Then put it under Image-derain-via-CGAN-master/code/. The model is offered by [machrisaa](https://github.com/machrisaa/tensorflow-vgg)
 
 4. Create two empty folder named "model" and "tensorboard" in order to store the model and tensorboard files.
 
@@ -71,6 +71,18 @@ Some "OK" results we got.
 | <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/3_input.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/3_output.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/3_ground_truth.JPG" >|
 
 
+## Tensorboard
+
+Smothing : 0.98
+
+Iterations : 50k
+
+| Model 21 |
+|---|
+|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/loss_graph.JPG" >|
+|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/Generator_loss_components.JPG" >|
+
+
 
 ## Cases that we tried
 | Model number | Discriminator Optimizer / Learning rate | Generator Optimizer / Learning rate / beta1 | GAN loss coefficient | VGG loss coefficient | Raw loss coefficient | label switch frequency |
@@ -90,16 +102,6 @@ Some "OK" results we got.
 |13| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.012 | 15 | 5 |
 |14| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.4 | 0.015 | 15 | 5 |
 
-## Tensorboard
-
-Smothing : 0.98
-
-Iterations : 50k
-
-| Model 21 |
-|---|
-|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/loss_graph.JPG" >|
-|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/Generator_loss_components.JPG" >|
 
 
 
@@ -108,6 +110,10 @@ Iterations : 50k
 * At first, we try to feed the discriminator only one image, so the discriminator will determine whether it is a rain image or not. The result will feed back to the generator in order to update the generator weight. But no matter how hard we tried, the generator colud not generate an "OK" de-raind image. So refer to some other CGAN papers, we decided to feed discriminator two images, which are the output of generator and its relevant ground truth.
 
 * Pre-train the discriminator test accuracy up to 90% and 80%, Then just update the generator. The results are bad. It seems like the generator could not fight against the discriminator. We must take turns training discriminator and generator. 
+
+## Acknowledge
+
+
 
 ## References
 
