@@ -52,6 +52,12 @@ python gan_main_deploy.py
 
 * We tried different combinations between coefficients. It seems like the keypoint in this case is the relation between GAN,  ,VGG and Raw loss coefficient. e.g. Model 13 result is quite good (2019.06.15).
 
+* Clip the GAN loss between 1e-10 and 1 could keep the GAN loss more stable.
+
+* Label switch do wrok in this case. Furthermore, the more label switches, the better performance we could get.
+
+* Applying Label smooth did not have a significant effect.
+
 ## Results
 
 Some "OK" results we get.
