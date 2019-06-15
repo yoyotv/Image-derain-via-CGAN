@@ -16,7 +16,7 @@ git clone https://github.com/yoyotv/Image-derain-via-CGAN.git
 
 2. Download the training and testing data from [here](https://drive.google.com/drive/folders/1qCHxRfTEPSm4ap90NOHOqhOcJShqP8dp). Unzip them and put under Image-derain-via-CGAN-master/code/. The dataset is provided by [1].
 
-3. Download the vgg19 pretrain model from [here](https://drive.google.com/drive/folders/1BpIqvXIq__0w6Y3hoOxxmpKFxPTj9htR). Then put it under Image-derain-via-CGAN-master/code/. The model is offered by [machrisaa](https://github.com/machrisaa/tensorflow-vgg)
+3. Download the vgg19 pretrain model from [here](https://drive.google.com/drive/folders/1BpIqvXIq__0w6Y3hoOxxmpKFxPTj9htR). Then put it under Image-derain-via-CGAN-master/code/. The model is provided by [machrisaa](https://github.com/machrisaa/tensorflow-vgg).
 
 4. Create two empty folder named "model" and "tensorboard" in order to store the model and tensorboard files.
 
@@ -113,7 +113,7 @@ Iterations : 50k
 
 ## Acknowledge
 
-
+I want to thank [gsdndeer](https://github.com/gsdndeer) who worked with me. We develop this repository together.
 
 ## References
 
