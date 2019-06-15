@@ -32,7 +32,7 @@ git clone https://github.com/yoyotv/Image-derain-via-CGAN.git
 
 * Using Adam optimizer will always cause the discriminator too strong, so we apply SGD in discriminator. Also, as long as the learning rate smaller than 0.002, the discriminator always overcomes the generator.
 
-* We tried different combinations between coefficients. It seems like the keypoint in this case is the relation between GAN,  ,VGG and Raw loss coefficient. e.g. Model 21 result is quite good (2019.06.15).
+* We tried different combinations between coefficients. It seems like the keypoint in this case is the relation between GAN,  ,VGG and Raw loss coefficient. e.g. Model 13 result is quite good (2019.06.15).
 
 ## Result
 | Input | Output | Ground truth |
