@@ -41,6 +41,8 @@ python gan_main.py
 
 ## Deploy
 
+You can download model 17 from [here](https://drive.google.com/drive/u/0/folders/1w88wb9QiUWF9rN9TgTI4RUjP5AeReb6y). The coefficient setup of model 17 will be mentioned later. 
+
 1. Assume you are now under Image-derain-via-CGAN-master/code/
 
 2. Open gan_main_deploy.py and modify the deploy image path and model that you want to load.
