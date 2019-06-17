@@ -54,7 +54,7 @@ python gan_main_deploy.py
 
 * Using Adam optimizer will always cause the discriminator too strong, so we apply SGD in discriminator. Also, as long as the learning rate smaller than 0.002, the discriminator always overcomes the generator.
 
-* We tried different combinations between coefficients. It seems like the keypoint in this case is the relation between GAN,  ,VGG and Raw loss coefficient. e.g. Model 2, 13, 17 result is quite good (2019.06.17).
+* We tried different combinations between coefficients. It seems like the keypoint in this case is the relation between GAN,  ,VGG and Raw loss coefficient. e.g. Model 2, 13, 17 result is quite good (2019.06.17). As my opinion, model 17 is the best.
 
 * Clip the GAN loss between 1e-10 and 1 could keep the GAN loss more stable.
 
