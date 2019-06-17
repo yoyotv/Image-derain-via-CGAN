@@ -73,7 +73,7 @@ Some other "OK" results we got.
 | <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/1_input.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/1_output.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/1_ground_truth.JPG" >|
 | <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/2_input.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/2_output.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/2_ground_truth.JPG" >|
 | <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/3_input.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/3_output.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/3_ground_truth.JPG" >|
-| <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/4_input.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/4_output_model_17.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/4_ground_truth.JPG" >|
+| <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/4_input.jpg" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/4_output_model_17.jpg" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/4_ground_truth.jpg" >|
 
 ### Real world test
 
@@ -93,7 +93,14 @@ Iterations : 50k
 |<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/loss_graph.JPG" >|
 |<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/Generator_loss_components.JPG" >|
 
+Smothing : 0.98
 
+Iterations : 140k
+
+| Model 17 |
+|---|
+|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/loss_graph_model_17.JPG" >|
+|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/gen_loss_component_model_17.JPG" >|
 
 ## Cases that we tried
 | Model number | Discriminator Optimizer / Learning rate | Generator Optimizer / Learning rate / beta1 | GAN loss coefficient | VGG loss coefficient | Raw loss coefficient | label switch frequency |
