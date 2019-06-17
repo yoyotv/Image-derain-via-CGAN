@@ -1,10 +1,10 @@
 # Image-derain-via-CGAN
 Use a CGAN to remove the rain in the image.
 
-| Input | Output | Ground truth |
-|:-:|:-:|:-:|
-| <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/1_input.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/1_output.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/1_ground_truth.JPG" >|
-| <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/2_input.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/2_output.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/2_ground_truth.JPG" >|
+| Input | Output |
+|:-:|:-:|
+| <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_input_1.png" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_output_1.png" >|
+| <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_input_2.png" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_output_2.png" >|
 
 
 ## First thing
