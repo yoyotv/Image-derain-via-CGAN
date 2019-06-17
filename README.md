@@ -1,12 +1,6 @@
 # Image-derain-via-CGAN
 Use a CGAN to remove the rain in the image.
 
-| Input | Output |
-|:-:|:-:|
-| <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_input_1.png" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_output_1.png" >|
-| <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_input_2.png" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_output_2.png" >|
-
-
 ## First thing
 
 I want to thank [gsdndeer](https://github.com/gsdndeer) who worked with me. We develop this repository together.
@@ -80,6 +74,12 @@ Some other "OK" results we got.
 | <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/2_input.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/2_output.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/2_ground_truth.JPG" >|
 | <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/3_input.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/3_output.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/3_ground_truth.JPG" >|
 
+### Real world test
+
+| Input | Output |
+|:-:|:-:|
+| <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_input_1.png" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_output_1.png" >|
+| <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_input_2.png" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_output_2.png" >|
 
 ## Tensorboard
 
