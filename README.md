@@ -84,20 +84,13 @@ Some other "OK" results we got.
 
 ## Tensorboard
 
-Smothing : 0.98
 
-Iterations : 50k
-
-| Model 13 |
+| Model 13 / Smothing : 0.98 Iterations : 50k|
 |---|
 |<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/loss_graph.JPG" >|
 |<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/Generator_loss_components.JPG" >|
 
-Smothing : 0.98
-
-Iterations : 140k
-
-| Model 17 |
+| Model 17  / Smothing : 0.98 Iterations : 140k|
 |---|
 |<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/loss_graph_model_17.JPG" >|
 |<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/gen_loss_component_model_17.JPG" >|
