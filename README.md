@@ -56,7 +56,7 @@ python gan_main_deploy.py
 
 * Using Adam optimizer will always cause the discriminator too strong, so we apply SGD in discriminator. Also, as long as the learning rate smaller than 0.002, the discriminator always overcomes the generator.
 
-* We tried different combinations between coefficients. It seems like the keypoint in this case is the relation between GAN,  ,VGG and Raw loss coefficient. e.g. Model 2, 13, 17 result is quite good (2019.06.17). As my opinion, model 17 is the best.
+* We tried different combinations between coefficients. It seems like the keypoint in this case is the relation between GAN,  ,VGG and Raw loss coefficient. e.g. Model 2, 13, 17, 18 result is quite good (2019.06.18). As my opinion, model 18 is the best.
 
 * Clip the GAN loss between 1e-10 and 1 could keep the GAN loss more stable.
 
@@ -97,6 +97,12 @@ Some other "OK" results we got.
 |---|
 |<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/loss_graph_model_17.JPG" >|
 |<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/gen_loss_component_model_17.JPG" >|
+
+
+| Model 18  / Smothing : 0.98 Iterations : 125k|
+|---|
+|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/loss_graph_model_18.JPG" >|
+|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/gen_loss_component_model_18.JPG" >|
 
 ## Cases that we tried
 | Model number | Discriminator Optimizer / Learning rate | Generator Optimizer / Learning rate / beta1 | GAN loss coefficient | VGG loss coefficient | Raw loss coefficient | label switch frequency |
