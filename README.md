@@ -81,6 +81,7 @@ Some other "OK" results we got.
 
 | Input | Output |
 |:-:|:-:|
+| <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_input_3.JPG" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_output_3_model_18.JPG" >|
 | <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_input_1.png" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_output_1.png" >|
 | <img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_input_2.png" >|<img src="https://raw.githubusercontent.com/yoyotv/Image-derain-via-CGAN/master/figures/real_output_2.png" >|
 
