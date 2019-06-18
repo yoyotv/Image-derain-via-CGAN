@@ -124,7 +124,9 @@ Some other "OK" results we got.
 |15| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.012 | 40 | 5 |
 |16| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.05 | 40 | 5 |
 |17| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.065 | 50 | 5 |
-|18| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.1 | 100 | 5 |
+|18*| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.1 | 100 | 5 |
+
+*Best performance
 
 ## Things we have tried but did not work
 
@@ -138,4 +140,5 @@ Some other "OK" results we got.
 [[1]](https://arxiv.org/pdf/1701.05957v3.pdf) He Zhang, Vishwanath Sindagi, Vishal M. Patel "Image De-raining Using a Conditional Generative Adversarial Network," arXiv:1701.05957v3 
 
 [[2]](https://arxiv.org/ftp/arxiv/papers/1810/1810.09479.pdf) Bharath Raj N., Venkateswaran N, "Single Image Haze Removal using a Generative Adversarial Network," arXiv:1810.09479
+ 
  
