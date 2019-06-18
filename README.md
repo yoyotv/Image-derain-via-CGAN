@@ -117,6 +117,7 @@ Some other "OK" results we got.
 |15| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.012 | 40 | 5 |
 |16| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.05 | 40 | 5 |
 |17| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.065 | 50 | 5 |
+|18| SGD / 0.002 | Adam / 0.0002 / 0.5 | 0.5 | 0.1 | 100 | 5 |
 
 ## Things we have tried but did not work
 
