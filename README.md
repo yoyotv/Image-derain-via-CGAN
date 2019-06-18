@@ -41,7 +41,7 @@ python gan_main.py
 
 ## Deploy
 
-You can download the pre-train model 17 or 18 from [here](https://drive.google.com/drive/u/0/folders/1wQQM9t5C-Q-FvYKMAQ3aiqBKc46587vr). The coefficient setup of model 17 will be mentioned later. Place the downloaded four files under Image-derain-via-CGAN-master/code/model/.
+You can download the pre-trained model 17 or 18 from [here](https://drive.google.com/drive/u/0/folders/1wQQM9t5C-Q-FvYKMAQ3aiqBKc46587vr). The coefficient setup of pre-trained models will be mentioned later. Place the downloaded four files under Image-derain-via-CGAN-master/code/model/.
 
 1. Assume you are now under Image-derain-via-CGAN-master/code/
 
