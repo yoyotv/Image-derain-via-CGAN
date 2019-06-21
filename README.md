@@ -66,6 +66,8 @@ python gan_main_deploy.py
 
 * Maybe update generator twice then update discriminator might got a better result. We thought in this case, the discriminator is just too strong. Slow the discriminator down might lead the network to get a better performance.
 
+* From [3] equation (3), using L1 distance to be the raw and vgg loss function instead of L2 distance might improve the performance. 
+
 ## Results
 
 Some other "OK" results we got.
@@ -141,4 +143,4 @@ Some other "OK" results we got.
 
 [[2]](https://arxiv.org/ftp/arxiv/papers/1810/1810.09479.pdf) Bharath Raj N., Venkateswaran N, "Single Image Haze Removal using a Generative Adversarial Network," arXiv:1810.09479
  
- 
+[[3]](https://arxiv.org/pdf/1611.07004.pdf) Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, Alexei A. Efros "Image-to-Image Translation with Conditional Adversarial Networks," arXiv:1611.07004
