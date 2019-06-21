@@ -64,9 +64,11 @@ python gan_main_deploy.py
 
 * Applying Label smooth did not have a significant effect.
 
-* Maybe update generator twice then update discriminator might got a better result. We thought in this case, the discriminator is just too strong. Slow the discriminator down might lead the network to get a better performance.
+* ^Maybe update generator twice then update discriminator might got a better result. We thought in this case, the discriminator is just too strong. Slow the discriminator down might lead the network to get a better performance.
 
-* From [3] equation (3), using L1 distance to be the raw and vgg loss function instead of L2 distance might improve the performance. 
+* ^From [3] equation (3), using L1 distance to be the raw and vgg loss function instead of L2 distance might improve the performance. 
+
+^We haven't try yet.
 
 ## Results
 
