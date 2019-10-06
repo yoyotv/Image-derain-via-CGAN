@@ -34,7 +34,7 @@ git clone https://github.com/yoyotv/Image-derain-via-CGAN.git
 
 2. Open gan_main.py and modify the training dataset path.
 
-3. Run 
+3. Run
 ```
 python gan_main.py
 ```
